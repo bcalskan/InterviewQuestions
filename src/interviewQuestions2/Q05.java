@@ -14,6 +14,24 @@ public class Q05 {
         en kucuk elemanının  farkını bulan bir method create ediniz.
         */
 
+        System.out.println("Eleman sayisi : ");
+        Scanner scan = new Scanner(System.in);
+        int sayi = scan.nextInt();
+
+        int arr[] = new int[sayi];
+
+        for (int i = 0; i < sayi; i++) {
+            System.out.println("Eleman giriniz : ");
+            int eleman = scan.nextInt();
+            arr[i] = eleman;
+        }
+
+        Arrays.sort(arr);
+        int max = arr[arr.length - 1];
+        int min = arr[0];
+
+        System.out.println("Fark : " + (max - min));
+
 
     }
 
